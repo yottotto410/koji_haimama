@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.ddo.yottotto410.himama"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name=
+        "android.permission.WRITE_EXTERNAL_STORAGE" />
+  
+    <uses-permission android:name=
+        "android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="jp.ddo.yottotto410.himama.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SetActivity"></activity>
+        <activity android:name=".TimePickerActivity"></activity>
+        <activity android:name=".RecActivity"></activity>
+        <activity android:name=".AlmExeActivity"></activity>
+        <activity android:name=".BroadcastReceiverActivity"></activity>
+        <receiver android:name=".BroadcastReceiverActivity">
+          <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+          </intent-filter>
+        </receiver>
+        <receiver android:name=".AlmExeActivity" android:process=":remote" />
+    </application>
+
+</manifest>
