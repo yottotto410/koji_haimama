@@ -21,6 +21,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,6 +42,7 @@ public class SetActivity extends Activity {
 	private int setHour = 0; //時
 	private int setMin = 0; //分
 	Uri uri = null;
+	
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -77,6 +80,59 @@ public class SetActivity extends Activity {
 		 * situation選択
 		 */
 		final EditText situ_et = (EditText)findViewById(R.id.situ_et);
+		
+		/*
+		 *  メッセージ設定
+		 */
+		final LinearLayout msg1_row = (LinearLayout)findViewById(R.id.msg1_row);
+		final EditText msg1_et = (EditText)findViewById(R.id.ms1_et);
+		final ImageView add1 = (ImageView) findViewById(R.id.add1_btn);
+		final LinearLayout msg2_row = (LinearLayout)findViewById(R.id.msg2_row);
+		final EditText msg2_et = (EditText)findViewById(R.id.ms2_et);
+		final ImageView add2 = (ImageView)findViewById(R.id.add2_btn);
+		final LinearLayout msg3_row = (LinearLayout)findViewById(R.id.msg3_row);
+		final EditText msg3_et = (EditText)findViewById(R.id.ms3_et);
+		final ImageView add3 = (ImageView)findViewById(R.id.add3_btn);
+		final LinearLayout msg4_row = (LinearLayout)findViewById(R.id.msg4_row);
+		final EditText msg4_et = (EditText)findViewById(R.id.ms4_et);
+		final ImageView add4 = (ImageView)findViewById(R.id.add4_btn);
+		final LinearLayout msg5_row = (LinearLayout)findViewById(R.id.msg5_row);
+		final EditText msg5_et = (EditText)findViewById(R.id.ms5_et);
+		final ImageView add5 = (ImageView)findViewById(R.id.add5_btn);
+		add1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                if (add1.getVisibility() == View.VISIBLE){
+                    add1.setVisibility(View.INVISIBLE);
+                    msg2_row.setVisibility(View.VISIBLE);
+                } 
+            }
+        });
+		add2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                if (add2.getVisibility() == View.VISIBLE){
+                    add2.setVisibility(View.INVISIBLE);
+                    msg3_row.setVisibility(View.VISIBLE);
+                } 
+            }
+        });
+		add3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                if (add3.getVisibility() == View.VISIBLE){
+                    add3.setVisibility(View.INVISIBLE);
+                    msg4_row.setVisibility(View.VISIBLE);
+                } 
+            }
+        });
+		add4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                if (add4.getVisibility() == View.VISIBLE){
+                    add4.setVisibility(View.INVISIBLE);
+                    msg5_row.setVisibility(View.VISIBLE);
+                } 
+            }
+        });
+		
+		
 		
 		/*
 		 * 再生button

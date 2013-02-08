@@ -24,7 +24,7 @@
                     android:id="@+id/display1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="tautou"
+                    android:text="アラームいちらん"
                     android:textSize="25sp" />
             </LinearLayout>
 
@@ -101,19 +101,40 @@
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="--:--"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/setHour1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/cln1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/setMin01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/how1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:scrollHorizontally="true"
                         android:ellipsize="end"
                         android:text="どんなとき"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -208,19 +229,40 @@
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="--:--"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/setHour2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/cln2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/setMin02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/how2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:scrollHorizontally="true"
                         android:ellipsize="end"
                         android:text="どんなとき"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -314,19 +356,40 @@
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="--:--"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/setHour3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/cln3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/setMin03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/how3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:scrollHorizontally="true"
                         android:ellipsize="end"
                         android:text="どんなとき"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -420,19 +483,39 @@
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="--:--"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/setHour4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/cln4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/setMin04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/how4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:scrollHorizontally="true"
                         android:ellipsize="end"
                         android:text="どんなとき"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -525,19 +608,40 @@
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="--:--"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/setHour5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/cln5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/setMin05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/how5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:scrollHorizontally="true"
                         android:ellipsize="end"
                         android:text="どんなとき"
                         android:textAppearance="?android:attr/textAppearanceMedium" />

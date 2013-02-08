@@ -147,6 +147,7 @@
 	    android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
+        android:id="@+id/msg1_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -169,14 +170,18 @@
             android:id="@+id/add1_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
             android:paddingRight="@dimen/default_gap"
             android:src="@android:drawable/ic_input_add" />
 
     </LinearLayout>
     
     <LinearLayout
+        android:id="@+id/msg2_row"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
 
         <TextView
             android:id="@+id/TextView04"
@@ -197,13 +202,17 @@
             android:id="@+id/add2_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:paddingRight="@dimen/default_gap"
             android:src="@android:drawable/ic_input_add" />
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/msg3_row"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
 
         <TextView
             android:id="@+id/TextView04"
@@ -224,13 +233,17 @@
             android:id="@+id/add3_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:paddingRight="@dimen/default_gap"
             android:src="@android:drawable/ic_input_add" />
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/msg4_row"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
 
         <TextView
             android:id="@+id/TextView04"
@@ -251,13 +264,17 @@
             android:id="@+id/add4_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:paddingRight="@dimen/default_gap"
             android:src="@android:drawable/ic_input_add" />
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/msg5_row"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
 
         <TextView
             android:id="@+id/TextView04"
@@ -278,8 +295,10 @@
             android:id="@+id/add5_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:paddingRight="@dimen/default_gap"
-            android:src="@android:drawable/ic_input_add" />
+            android:src="@android:drawable/ic_input_add"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
